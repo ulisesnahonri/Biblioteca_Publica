@@ -1,5 +1,5 @@
 -- ============================================================
---  DML - Población de Base de Datos y Manipulación
+--  DML - Población de Base de Datos y Manipulación (VERSIÓN > 100 REGISTROS)
 -- ============================================================
 
 INSERT INTO Categoria (ID_Categoria, Nombre_Categoria, Descripcion) VALUES
@@ -23,20 +23,6 @@ INSERT INTO Editorial (ID_Editorial, Nombre_Editorial, Pais, Sitio_Web) VALUES
 (7, 'McGraw-Hill', 'Estados Unidos', 'https://www.mheducation.com'),
 (8, 'Losada', 'Argentina', 'https://www.editoriallosada.com');
 
-INSERT INTO Libro (ISBN, Titulo, Anio_Publicacion, Idioma, ID_Categoria, ID_Editorial) VALUES
-('978-84-204-1385-0', 'Cien años de soledad', 1967, 'Español', 1, 1),
-('978-84-339-7574-6', 'El amor en los tiempos del cólera', 1985, 'Español', 1, 3),
-('978-84-08-04668-3', 'El nombre de la rosa', 1980, 'Español', 1, 2),
-('978-84-204-8373-9', '1984', 1949, 'Español', 2, 1),
-('978-84-450-7461-9', 'Brave New World', 1932, 'Inglés', 2, 6),
-('978-84-375-0473-2', 'Sapiens: De animales a dioses', 2011, 'Español', 3, 2),
-('978-84-663-4778-0', 'Breve historia del tiempo', 1988, 'Español', 4, 2),
-('978-84-206-5433-8', 'El mundo de Sofía', 1991, 'Español', 5, 1),
-('978-84-415-3336-7', 'El programador pragmático', 1999, 'Español', 6, 7),
-('978-84-204-1012-5', 'El principito', 1943, 'Español', 7, 1),
-('978-84-030-0276-8', 'Veinte poemas de amor', 1924, 'Español', 8, 8),
-('978-84-339-6794-9', 'Pedro Páramo', 1955, 'Español', 1, 4);
-
 INSERT INTO Autor (ID_Autor, Nombre_Autor, Apellido_Autor, Nacionalidad) VALUES
 (1, 'Gabriel', 'García Márquez', 'Colombiana'),
 (2, 'Umberto', 'Eco', 'Italiana'),
@@ -49,8 +35,67 @@ INSERT INTO Autor (ID_Autor, Nombre_Autor, Apellido_Autor, Nacionalidad) VALUES
 (9, 'David', 'Thomas', 'Estadounidense'),
 (10, 'Antoine de', 'Saint-Exupéry', 'Francesa'),
 (11, 'Pablo', 'Neruda', 'Chilena'),
-(12, 'Juan', 'Rulfo', 'Mexicana');
+(12, 'Juan', 'Rulfo', 'Mexicana'),
+(13, 'Isaac', 'Asimov', 'Rusa'),
+(14, 'J.K.', 'Rowling', 'Británica'),
+(15, 'Isabel', 'Allende', 'Chilena'),
+(16, 'Jorge Luis', 'Borges', 'Argentina'),
+(17, 'Julio', 'Cortázar', 'Argentina'),
+(18, 'Mario', 'Vargas Llosa', 'Peruana'),
+(19, 'Arthur', 'Conan Doyle', 'Británica'),
+(20, 'Agatha', 'Christie', 'Británica');
 
+INSERT INTO Libro (ISBN, Titulo, Anio_Publicacion, Idioma, ID_Categoria, ID_Editorial) VALUES
+('978-84-204-1385-0', 'Cien años de soledad', 1927, 'Español', 1, 1),
+('978-84-339-7574-6', 'El amor en los tiempos del cólera', 1964, 'Español', 1, 3),
+('978-84-08-04668-3', 'El nombre de la rosa', 1989, 'Español', 1, 2),
+('978-84-204-8373-9', '1984', 1941, 'Español', 2, 1),
+('978-84-450-7461-9', 'Brave New World', 1921, 'Español', 2, 6),
+('978-84-375-0473-2', 'Sapiens: De animales a dioses', 1960, 'Español', 3, 2),
+('978-84-663-4778-0', 'Breve historia del tiempo', 1934, 'Español', 4, 2),
+('978-84-206-5433-8', 'El mundo de Sofía', 1994, 'Español', 5, 1),
+('978-84-415-3336-7', 'El programador pragmático', 2016, 'Español', 6, 7),
+('978-84-204-1012-5', 'El principito', 2022, 'Español', 7, 1),
+('978-84-030-0276-8', 'Veinte poemas de amor', 1947, 'Español', 8, 8),
+('978-84-339-6794-9', 'Pedro Páramo', 2022, 'Español', 1, 4),
+('978-84-772-3400-3', 'Libro Genérico Vol 13', 1927, 'Español', 6, 8),
+('978-84-687-8678-2', 'Libro Genérico Vol 14', 1925, 'Español', 2, 8),
+('978-84-605-6382-4', 'Libro Genérico Vol 15', 2005, 'Español', 4, 1),
+('978-84-367-4690-3', 'Libro Genérico Vol 16', 1988, 'Español', 2, 1),
+('978-84-356-7443-8', 'Libro Genérico Vol 17', 2017, 'Español', 2, 1),
+('978-84-735-6361-5', 'Libro Genérico Vol 18', 1970, 'Español', 2, 6),
+('978-84-476-3243-6', 'Libro Genérico Vol 19', 1961, 'Español', 2, 1),
+('978-84-146-9662-1', 'Libro Genérico Vol 20', 1961, 'Español', 5, 8),
+('978-84-988-3448-8', 'Libro Genérico Vol 21', 1984, 'Español', 7, 7),
+('978-84-992-7161-4', 'Libro Genérico Vol 22', 1971, 'Español', 7, 7),
+('978-84-499-8966-4', 'Libro Genérico Vol 23', 1949, 'Español', 2, 8),
+('978-84-729-5563-6', 'Libro Genérico Vol 24', 1985, 'Español', 5, 4),
+('978-84-246-4950-3', 'Libro Genérico Vol 25', 2003, 'Español', 8, 2),
+('978-84-347-8437-1', 'Libro Genérico Vol 26', 1947, 'Español', 1, 5),
+('978-84-305-7605-8', 'Libro Genérico Vol 27', 1994, 'Español', 2, 5),
+('978-84-157-1191-3', 'Libro Genérico Vol 28', 1952, 'Español', 8, 7),
+('978-84-997-5131-2', 'Libro Genérico Vol 29', 1934, 'Español', 5, 6),
+('978-84-112-1697-0', 'Libro Genérico Vol 30', 1926, 'Español', 6, 6),
+('978-84-451-4994-1', 'Libro Genérico Vol 31', 1982, 'Español', 2, 7),
+('978-84-224-8645-0', 'Libro Genérico Vol 32', 1963, 'Español', 8, 1),
+('978-84-318-5812-0', 'Libro Genérico Vol 33', 1969, 'Español', 4, 6),
+('978-84-222-4547-4', 'Libro Genérico Vol 34', 2001, 'Español', 2, 6),
+('978-84-662-5963-2', 'Libro Genérico Vol 35', 2020, 'Español', 5, 6),
+('978-84-877-2104-0', 'Libro Genérico Vol 36', 1924, 'Español', 3, 5),
+('978-84-494-3152-5', 'Libro Genérico Vol 37', 1926, 'Español', 4, 6),
+('978-84-440-9315-6', 'Libro Genérico Vol 38', 1996, 'Español', 1, 7),
+('978-84-235-6482-4', 'Libro Genérico Vol 39', 1978, 'Español', 7, 7),
+('978-84-134-9588-2', 'Libro Genérico Vol 40', 2019, 'Español', 4, 2),
+('978-84-303-4681-4', 'Libro Genérico Vol 41', 1995, 'Español', 2, 2),
+('978-84-546-7139-5', 'Libro Genérico Vol 42', 1973, 'Español', 5, 1),
+('978-84-924-3690-1', 'Libro Genérico Vol 43', 1970, 'Español', 3, 8),
+('978-84-391-9190-1', 'Libro Genérico Vol 44', 1962, 'Español', 7, 3),
+('978-84-627-4660-9', 'Libro Genérico Vol 45', 1979, 'Español', 6, 8),
+('978-84-144-2068-1', 'Libro Genérico Vol 46', 1950, 'Español', 2, 7),
+('978-84-386-6123-0', 'Libro Genérico Vol 47', 1986, 'Español', 8, 4),
+('978-84-232-2461-2', 'Libro Genérico Vol 48', 2012, 'Español', 8, 7),
+('978-84-837-3792-6', 'Libro Genérico Vol 49', 1936, 'Español', 7, 3),
+('978-84-642-4117-9', 'Libro Genérico Vol 50', 1927, 'Español', 3, 7);
 INSERT INTO Libro_Autor (ISBN, ID_Autor) VALUES
 ('978-84-204-1385-0', 1),
 ('978-84-339-7574-6', 1),
@@ -64,8 +109,45 @@ INSERT INTO Libro_Autor (ISBN, ID_Autor) VALUES
 ('978-84-415-3336-7', 9),
 ('978-84-204-1012-5', 10),
 ('978-84-030-0276-8', 11),
-('978-84-339-6794-9', 12);
-
+('978-84-339-6794-9', 12),
+('978-84-772-3400-3', 13),
+('978-84-687-8678-2', 17),
+('978-84-605-6382-4', 16),
+('978-84-367-4690-3', 19),
+('978-84-356-7443-8', 20),
+('978-84-735-6361-5', 20),
+('978-84-476-3243-6', 17),
+('978-84-146-9662-1', 14),
+('978-84-988-3448-8', 14),
+('978-84-992-7161-4', 15),
+('978-84-499-8966-4', 15),
+('978-84-729-5563-6', 16),
+('978-84-246-4950-3', 15),
+('978-84-347-8437-1', 14),
+('978-84-305-7605-8', 20),
+('978-84-157-1191-3', 19),
+('978-84-997-5131-2', 17),
+('978-84-112-1697-0', 18),
+('978-84-451-4994-1', 13),
+('978-84-224-8645-0', 17),
+('978-84-318-5812-0', 13),
+('978-84-222-4547-4', 19),
+('978-84-662-5963-2', 18),
+('978-84-877-2104-0', 13),
+('978-84-494-3152-5', 16),
+('978-84-440-9315-6', 13),
+('978-84-235-6482-4', 18),
+('978-84-134-9588-2', 13),
+('978-84-303-4681-4', 13),
+('978-84-546-7139-5', 15),
+('978-84-924-3690-1', 18),
+('978-84-391-9190-1', 15),
+('978-84-627-4660-9', 19),
+('978-84-144-2068-1', 14),
+('978-84-386-6123-0', 18),
+('978-84-232-2461-2', 14),
+('978-84-837-3792-6', 14),
+('978-84-642-4117-9', 19);
 INSERT INTO Ejemplar (ID_Ejemplar, Estado_Fisico, Disponibilidad, ISBN) VALUES
 (1, 'Bueno', 'Disponible', '978-84-204-1385-0'),
 (2, 'Regular', 'Prestado', '978-84-204-1385-0'),
@@ -88,8 +170,45 @@ INSERT INTO Ejemplar (ID_Ejemplar, Estado_Fisico, Disponibilidad, ISBN) VALUES
 (19, 'Regular', 'Disponible', '978-84-204-1012-5'),
 (20, 'Regular', 'Disponible', '978-84-030-0276-8'),
 (21, 'Bueno', 'Disponible', '978-84-339-6794-9'),
-(22, 'Nuevo', 'Prestado', '978-84-339-6794-9');
-
+(22, 'Nuevo', 'Prestado', '978-84-339-6794-9'),
+(23, 'Nuevo', 'Disponible', '978-84-030-0276-8'),
+(24, 'Deteriorado', 'Disponible', '978-84-415-3336-7'),
+(25, 'Bueno', 'Disponible', '978-84-235-6482-4'),
+(26, 'Deteriorado', 'Disponible', '978-84-303-4681-4'),
+(27, 'Bueno', 'Disponible', '978-84-451-4994-1'),
+(28, 'Nuevo', 'Disponible', '978-84-204-8373-9'),
+(29, 'Bueno', 'Disponible', '978-84-988-3448-8'),
+(30, 'Bueno', 'Disponible', '978-84-232-2461-2'),
+(31, 'Bueno', 'Disponible', '978-84-386-6123-0'),
+(32, 'Bueno', 'Disponible', '978-84-988-3448-8'),
+(33, 'Nuevo', 'Disponible', '978-84-305-7605-8'),
+(34, 'Bueno', 'Disponible', '978-84-494-3152-5'),
+(35, 'Nuevo', 'Disponible', '978-84-837-3792-6'),
+(36, 'Deteriorado', 'Disponible', '978-84-627-4660-9'),
+(37, 'Regular', 'Disponible', '978-84-450-7461-9'),
+(38, 'Nuevo', 'Disponible', '978-84-305-7605-8'),
+(39, 'Regular', 'Disponible', '978-84-494-3152-5'),
+(40, 'Regular', 'Disponible', '978-84-339-6794-9'),
+(41, 'Deteriorado', 'Disponible', '978-84-642-4117-9'),
+(42, 'Bueno', 'Disponible', '978-84-440-9315-6'),
+(43, 'Regular', 'Disponible', '978-84-356-7443-8'),
+(44, 'Deteriorado', 'Disponible', '978-84-232-2461-2'),
+(45, 'Regular', 'Disponible', '978-84-687-8678-2'),
+(46, 'Bueno', 'Disponible', '978-84-305-7605-8'),
+(47, 'Nuevo', 'Disponible', '978-84-303-4681-4'),
+(48, 'Bueno', 'Disponible', '978-84-451-4994-1'),
+(49, 'Regular', 'Disponible', '978-84-347-8437-1'),
+(50, 'Regular', 'Disponible', '978-84-992-7161-4'),
+(51, 'Regular', 'Disponible', '978-84-877-2104-0'),
+(52, 'Nuevo', 'Disponible', '978-84-687-8678-2'),
+(53, 'Bueno', 'Disponible', '978-84-391-9190-1'),
+(54, 'Regular', 'Disponible', '978-84-356-7443-8'),
+(55, 'Bueno', 'Disponible', '978-84-735-6361-5'),
+(56, 'Bueno', 'Disponible', '978-84-204-8373-9'),
+(57, 'Regular', 'Disponible', '978-84-339-7574-6'),
+(58, 'Nuevo', 'Disponible', '978-84-997-5131-2'),
+(59, 'Bueno', 'Disponible', '978-84-729-5563-6'),
+(60, 'Regular', 'Disponible', '978-84-356-7443-8');
 INSERT INTO Empleado (ID_Empleado, Nombre_Empleado, Apellido_Empleado, Cargo, ID_Supervisor) VALUES
 (1, 'María', 'González López', 'Directora', NULL),
 (2, 'Carlos', 'Martínez Pérez', 'Jefe de Circulación', 1),
@@ -97,7 +216,6 @@ INSERT INTO Empleado (ID_Empleado, Nombre_Empleado, Apellido_Empleado, Cargo, ID
 (4, 'Luis', 'Hernández Cruz', 'Bibliotecario', 2),
 (5, 'Sofía', 'López Mendoza', 'Asistente', 3),
 (6, 'Diego', 'Ramírez Torres', 'Asistente', 4);
-
 INSERT INTO Socio (ID_Socio, DUI, Nombre_Socio, Apellido_Socio, Correo, Telefono, Estado_Socio) VALUES
 (1, '01234567-8', 'Juan', 'Pérez García', 'juan.perez@email.com', '7111-2222', 'Activo'),
 (2, '09876543-2', 'María', 'López Torres', 'maria.lopez@email.com', '7333-4444', 'Activo'),
@@ -108,8 +226,27 @@ INSERT INTO Socio (ID_Socio, DUI, Nombre_Socio, Apellido_Socio, Correo, Telefono
 (7, '07890123-5', 'Pedro', 'Hernández Lima', 'pedro.h@email.com', '7334-4455', 'Activo'),
 (8, '04567890-1', 'Lucía', 'Ramírez Medina', 'lucia.r@email.com', '7556-6677', 'Inactivo'),
 (9, '08901234-6', 'Miguel', 'Vásquez Orellana', 'miguel.v@email.com', '7778-8899', 'Activo'),
-(10, '00123456-7', 'Valentina', 'Castro Pineda', 'vale.castro@email.com', '7990-0011', 'Activo');
-
+(10, '00123456-7', 'Valentina', 'Castro Pineda', 'vale.castro@email.com', '7990-0011', 'Activo'),
+(11, '09096920-4', 'Socio11', 'Apellido11', 'socio11@email.com', '7000-0011', 'Activo'),
+(12, '08515530-3', 'Socio12', 'Apellido12', 'socio12@email.com', '7000-0012', 'Activo'),
+(13, '04410641-5', 'Socio13', 'Apellido13', 'socio13@email.com', '7000-0013', 'Activo'),
+(14, '08485711-9', 'Socio14', 'Apellido14', 'socio14@email.com', '7000-0014', 'Activo'),
+(15, '08240441-5', 'Socio15', 'Apellido15', 'socio15@email.com', '7000-0015', 'Activo'),
+(16, '06930852-6', 'Socio16', 'Apellido16', 'socio16@email.com', '7000-0016', 'Activo'),
+(17, '08501290-4', 'Socio17', 'Apellido17', 'socio17@email.com', '7000-0017', 'Activo'),
+(18, '04624797-4', 'Socio18', 'Apellido18', 'socio18@email.com', '7000-0018', 'Activo'),
+(19, '06274351-1', 'Socio19', 'Apellido19', 'socio19@email.com', '7000-0019', 'Activo'),
+(20, '09125091-5', 'Socio20', 'Apellido20', 'socio20@email.com', '7000-0020', 'Activo'),
+(21, '09407264-0', 'Socio21', 'Apellido21', 'socio21@email.com', '7000-0021', 'Activo'),
+(22, '04358675-2', 'Socio22', 'Apellido22', 'socio22@email.com', '7000-0022', 'Activo'),
+(23, '03575127-0', 'Socio23', 'Apellido23', 'socio23@email.com', '7000-0023', 'Activo'),
+(24, '03215320-4', 'Socio24', 'Apellido24', 'socio24@email.com', '7000-0024', 'Activo'),
+(25, '07674282-7', 'Socio25', 'Apellido25', 'socio25@email.com', '7000-0025', 'Activo'),
+(26, '09552032-8', 'Socio26', 'Apellido26', 'socio26@email.com', '7000-0026', 'Activo'),
+(27, '08337261-2', 'Socio27', 'Apellido27', 'socio27@email.com', '7000-0027', 'Activo'),
+(28, '01537967-9', 'Socio28', 'Apellido28', 'socio28@email.com', '7000-0028', 'Activo'),
+(29, '05755628-3', 'Socio29', 'Apellido29', 'socio29@email.com', '7000-0029', 'Activo'),
+(30, '08830051-5', 'Socio30', 'Apellido30', 'socio30@email.com', '7000-0030', 'Activo');
 INSERT INTO Prestamo (ID_Prestamo, Fecha_Prestamo, Fecha_Limite, ID_Socio, ID_Ejemplar, ID_Empleado) VALUES
 (1, '2026-06-01', '2026-06-15', 1, 2, 3),
 (2, '2026-06-03', '2026-06-17', 2, 6, 4),
@@ -122,18 +259,27 @@ INSERT INTO Prestamo (ID_Prestamo, Fecha_Prestamo, Fecha_Limite, ID_Socio, ID_Ej
 (9, '2026-03-15', '2026-03-29', 2, 20, 5),
 (10, '2026-06-08', '2026-06-22', 10, 12, 6),
 (11, '2026-06-12', '2026-06-26', 3, 17, 4),
-(12, '2026-06-14', '2026-06-28', 3, 18, 5);
-
+(12, '2026-06-14', '2026-06-28', 3, 18, 5),
+(13, '2026-06-15', '2026-06-29', 11, 23, 3),
+(14, '2026-06-15', '2026-06-29', 12, 24, 4),
+(15, '2026-06-16', '2026-06-30', 13, 25, 5),
+(16, '2026-06-16', '2026-06-30', 14, 26, 6),
+(17, '2026-06-17', '2026-07-01', 15, 27, 3),
+(18, '2026-06-17', '2026-07-01', 16, 28, 4),
+(19, '2026-06-18', '2026-07-02', 17, 29, 5),
+(20, '2026-06-18', '2026-07-02', 18, 30, 6);
 INSERT INTO Devolucion (ID_Devolucion, Fecha_Real_Devolucion, Condicion_Ejemplar_Recibido, ID_Prestamo) VALUES
 (1, '2026-05-22', 'Bueno', 6),
 (2, '2026-05-05', 'Regular', 7),
 (3, '2026-06-03', 'Bueno', 8),
-(4, '2026-04-08', 'Deteriorado', 9);
+(4, '2026-04-08', 'Deteriorado', 9),
+(5, '2026-06-20', 'Bueno', 1);
 
 INSERT INTO Multa (ID_Multa, Monto_Calculado, Estado_Pago, ID_Devolucion) VALUES
 (1, 1.75, 'Pagada', 1),
 (2, 2.75, 'Pendiente', 2),
-(3, 2.50, 'Pagada', 4);
+(3, 2.50, 'Pagada', 4),
+(4, 2.50, 'Pendiente', 5);
 
 INSERT INTO Reserva (ID_Reserva, Fecha_Reserva, Estado_Reserva, ID_Ejemplar, ID_Socio) VALUES
 (1, '2026-06-10', 'Pendiente', 12, 3),
@@ -142,30 +288,12 @@ INSERT INTO Reserva (ID_Reserva, Fecha_Reserva, Estado_Reserva, ID_Ejemplar, ID_
 (4, '2026-06-14', 'Pendiente', 2, 7),
 (5, '2026-06-15', 'Cancelada', 16, 8);
 
-
 -- ============================================================
 -- EJEMPLOS DE MANIPULACIÓN DE DATOS (UPDATE Y DELETE)
 -- Requisito de la rúbrica para sentencias DML
 -- ============================================================
-
--- 1. UPDATE: Actualizar el teléfono y correo de un socio
-UPDATE Socio
-SET Telefono = '7000-9999', Correo = 'juan.perez.nuevo@email.com'
-WHERE ID_Socio = 1;
-
--- 2. UPDATE: Cambiar el estado de un ejemplar por desgaste natural
-UPDATE Ejemplar
-SET Estado_Fisico = 'Deteriorado'
-WHERE ID_Ejemplar = 5;
-
--- 3. DELETE: Eliminar una reserva que fue cancelada por el usuario
-DELETE FROM Reserva
-WHERE ID_Reserva = 3;
-
--- 4. DELETE: Eliminar un autor que se ingresó por error y no tiene libros
--- (Primero insertamos uno de prueba y luego lo borramos)
-INSERT INTO Autor (ID_Autor, Nombre_Autor, Apellido_Autor, Nacionalidad) 
-VALUES (99, 'Autor', 'Equivocado', 'Desconocida');
-
-DELETE FROM Autor
-WHERE ID_Autor = 99;
+UPDATE Socio SET Telefono = '7000-9999', Correo = 'juan.perez.nuevo@email.com' WHERE ID_Socio = 1;
+UPDATE Ejemplar SET Estado_Fisico = 'Deteriorado' WHERE ID_Ejemplar = 5;
+DELETE FROM Reserva WHERE ID_Reserva = 3;
+INSERT INTO Autor (ID_Autor, Nombre_Autor, Apellido_Autor, Nacionalidad) VALUES (99, 'Autor', 'Equivocado', 'Desconocida');
+DELETE FROM Autor WHERE ID_Autor = 99;
